@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-Time Polling Web App">
+    <title>Real-Time Polling Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Polling Web App</h1>
+        <div class="poll">
+            <h2>Vote for Your Favorite Programming Language</h2>
+            <div class="options">
+                <button onclick="vote('Python')">Python</button>
+                <button onclick="vote('Java')">Java</button>
+                <button onclick="vote('R')">R</button>
+            </div>
+        </div>
+        
+        <!-- Live Results Section -->
+        <div class="results">
+            <h2>Live Results</h2>
+            <div id="result">
+                <!-- Results will be updated here dynamically -->
+            </div>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div class="dashboard">
+            <h2>Winning Probability</h2>
+            <div id="probability">
+                <!-- Winning probabilities will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
